@@ -2,7 +2,9 @@ from pymongo import MongoClient
 from bson import ObjectId
 
 client = MongoClient("mongodb://localhost:27017")
-db = client["mydb"]
+# Your own databse
+db = client["mydb"] 
+# Your own collection
 users_collection = db["users"]
 
 def get_user_by_email(email: str):
