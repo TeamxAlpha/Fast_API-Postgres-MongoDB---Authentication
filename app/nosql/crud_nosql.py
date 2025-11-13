@@ -4,7 +4,7 @@ from passlib.context import CryptContext
 
 pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
 
-SECRET_KEY = "aa1cbe151448204bbf9c36519d59277d013360708dc3f148386afab50456a4b6"
+SECRET_KEY = "your-secret-key(can be generated from bash-terminal --- "openssl rand -hex 32")"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
